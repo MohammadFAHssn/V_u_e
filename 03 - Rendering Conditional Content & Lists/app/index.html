@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- sec 1: v-if and v-show -->
+      <section>
+        <p>sec 1: v-if</p>
+
+        <p v-if="1">this paragraph will be shown</p>
+
+        <p v-if="0">this paragraph will not be shown</p>
+        <p v-else-if="0">this paragraph will not be shown</p>
+        <p v-else>this paragraph will be shown</p>
+
+        <p>
+          Now there is an alternative to v-if, there also is v-show. So, why
+          would we use v-show? let's inspect this. And then you'll notice a
+          difference. The paragraph is there. And the only difference is that it
+          is hidden. because its display style is set to none. you have a bunch
+          of elements in your DOM. which you don't really need at the moment<br />
+          V-if really removes and adds elements from and to the DOM. which can
+          cost performance<br />
+          Now, which approach is better. you should typically use v-if and only
+          fall back to v-show. if you have an element. which visibility status
+          changes a lot.
+        </p>
+      </section>
+      <!-- end sec 1 -->
+
+      <!-- sec 2: v-for -->
+      <section>
+        <p>sec 2: v-for</p>
+        <ul>
+          <li v-for="(item, index) in items">{{index}}- {{item}}</li>
+        </ul>
+
+        <ul>
+          <li v-for="(value, key) in {name: 'max', age: 3}">
+            {{key}}: {{value}}
+          </li>
+        </ul>
+
+        <ul>
+          <li v-for="num in 10">{{num}}</li>
+        </ul>
+      </section>
+      <!-- end sec 2 -->
+
+      <!-- sec 3 -->
+      <section>
+        <p>sec 3</p>
+
+        <input v-model="enteredValue" />
+        <button @click="addGoal">add goal</button>
+        <ul>
+          <li v-for="(goal, index) in goals" @click="removeGoal(index)">
+            {{goal}}
+          </li>
+        </ul>
+      </section>
+      <!-- end sec 3 -->
+
+      <!-- sec 4: lists & keys -->
+      <section>
+        <p>sec 4: lists & keys</p>
+
+        <input v-model="enteredValueInSec4" />
+        <button @click="addGoalInSec4">add goal</button>
+        <ul>
+          <li
+            v-for="(goal, index) in goalsInSec4"
+            @click="removeGoalInSec4(index)"
+          >
+            {{goal}}
+            <input @click.stop />
+            <!-- @click.stop is for prevent deletion of li when is clicked-->
+          </li>
+        </ul>
+
+        <p>
+          let me show you a strange bug. if you add some goal and then input
+          something different in input element of every goal. and now if you
+          remove one of goals, you see something strange. Vue updates the list
+          when you add and remove items. it renders the list in the real Dom.
+          and updates it as required. And it tries to do that such that it
+          optimizes performance. That also means that it reuses Dom elements. So
+          if we have two goals here, two Dom elements. and I delete the first
+          one, Vue will actually not re-render the entire list. It will also not
+          delete the first Dom element and move to the second one around,
+          Instead it basically takes the """content""" of the second element and
+          moves it into the first Dom element. The input element in the first
+          Dom element is still the old one.
+        </p>
+        <p>
+          for solve: there is a simple extra attribute: the key attribute. And
+          key, once a unique identification criteria for every item it's
+          outputting here. You might be inclined to say the index does that
+          because every goal has its own index, But well, keep in mind that if I
+          have two goals and I delete the first one, the old second one now has
+          index zero. The index doesn't really belong to the goal content.
+        </p>
+
+        <p>
+          now Vue was able to tell the different Dom elements apart and detect
+          that the first Dom element now needs to be removed in order to not
+          lose any data attached to the second element.
+        </p>
+
+        <input v-model="enteredValueInSec4_2" />
+        <button @click="addGoalInSec4_2">add goal</button>
+        <ul>
+          <li
+            v-for="(goal, index) in goalsInSec4_2"
+            :key="goal"
+            @click="removeGoalInSec4_2(index)"
+          >
+            {{goal}}
+            <input @click.stop />
+          </li>
+        </ul>
+      </section>
+      <!-- end sec 4 -->
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<style>
+  section {
+    margin: 16px;
+    padding: 12px;
+    border: 1px solid black;
+  }
+</style>

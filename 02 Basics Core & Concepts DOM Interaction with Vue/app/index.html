@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- 3 -->
+      <section>
+        <!-- <a href="{{vueDocumentationLink}}">Vue tutorial</a> -->
+        <!-- that doesn't work -->
+        <a v-bind:href="vueDocumentationLink">Vue tutorial</a>
+        <!-- And v-bind tells Vue to bind, so to set the value of something -->
+      </section>
+      <!-- end 3 -->
+
+      <!-- 4 -->
+      <section>
+        <input v-on:input="writeSomething" />
+        <p>{{something}}</p>
+
+        <input
+          v-on:input="writeSomethingWithSomething($event,
+        'with This')"
+        />
+        <p>{{somethingWithSomething}}</p>
+      </section>
+      <!-- end 4 -->
+
+      <!-- 5 -->
+
+      <form v-on:submit="submitForm">
+        <button>submit</button>
+      </form>
+
+      <form v-on:submit.prevent="submitForm2">
+        <!-- event modifier -->
+        <button>submit2</button>
+      </form>
+      <!-- end 5 -->
+
+      <!-- 1 -->
+      <!-- key modifier, when you're listening to keyboard events
+        -->
+      <section>
+        <input v-on:input="setName" v-on:keyup.enter="setConfirmedName" />
+        <p>{{name}}</p>
+        <p>{{confirmedName}}</p>
+      </section>
+      <!-- end 1 -->
+
+      <!-- 2 -->
+      <section>
+        <p>sec 2</p>
+        <input v-bind:value="nameInSec2" v-on:input="setNameInSec2" />
+        <p>{{nameInSec2}}</p>
+        <button v-on:click="resetInputInSec2">reset</button>
+      </section>
+      <!-- instead of this abroach we use v-mode; -->
+      <!-- end 2 -->
+
+      <!-- 5_2 -->
+      <section>
+        <p>sec 5_2</p>
+        <p>Computed property</p>
+        <p>
+          we can't execute a function here for example curly brackets curly
+          brackets setName(). because for every update and every render this
+          function will be executed. we instead use computed property in
+          vue.createApp({}) and place definition of that function in that
+          computed property instead of methods property and it's important that
+          we call it by reference (we're going to use this like a data
+          property).
+        </p>
+
+        <p>
+          Computed properties are essentially like methods with one important
+          difference vue will be aware of their dependencies and only reexecute
+          them if one of the dependencies changed. off course when the app is
+          first rendered, it render initially.
+        </p>
+
+        <p>
+          thats very very important, in computed we just return something not
+          update
+        </p>
+
+        <p>
+          you shouldn't put too much logic into your HTML code. and add computed
+          properties
+        </p>
+      </section>
+      <!-- end 5_2 -->
+
+      <!-- 6 -->
+      <section>
+        <p>sec 6: watch method</p>
+        <p>
+          it's just same as computed property but it just reexecute base on just
+          one data. thats very very import that if you wanna run logic that may
+          be also updates a data property, we use watch but in computed we just
+          return something. Another example, would be HTTP requests which you
+          wanna send if certain data changes or timers which you wanna set, if
+          certain values change or stores something in local storage. this is as
+          same as "useEffect", we do not use them directly in templates we use
+          them when ever ...
+          <br />
+          you should name your computed properties just as you would name your
+          data properties.
+        </p>
+      </section>
+      <!-- end 6 -->
+
+      <!-- 7 -->
+      <section>
+        <p>sec 7: very important point</p>
+        <p>
+          another very important point is that if we use a function inside of a
+          method or computed of watch and if we use "this" keyword inside that
+          function, this point to that function not that property! we should
+          first outside of that function store "this" that point to a property
+          in a variable and then use that variable inside that function.
+        </p>
+      </section>
+      <!-- end 7 -->
+
+      <!-- 8 -->
+      <section>
+        <p>set8: v-bind and v-on Shorthands</p>
+        <ul>
+          <li>v-on:click => @click</li>
+          <li>v-bind:value => :value</li>
+        </ul>
+      </section>
+      <!-- end 8 -->
+
+      <!-- 9 -->
+      <section>
+        <p>
+          sec 9: Dynamic Styling with Inline Styles and Adding CSS Classes
+          Dynamically
+        </p>
+        <div>
+          <!-- :style="{borderColor: 'red'}" -->
+          <!-- :style="{'border-color': 'red'}" -->
+
+          <!-- :class="{demo: true, active: boxASelected}" -->
+          <!-- 👆 the element always has demo class,
+           and if boxASelected is true then the element has active class -->
+          <!-- or -->
+          <!-- class="demo"
+           :class="{active: boxASelected}"-->
+          <!-- or -->
+          <!--:class="['demo', {active: boxASelected}]"-->
+          <p class="dynamic-styling-on-p">part 1</p>
+          <p class="dynamic-styling-on-p">part 2</p>
+          <p class="dynamic-styling-on-p">part 3</p>
+        </div>
+      </section>
+      <!-- end 9 -->
+
+      <!-- 10: disabled attribute -->
+      <p>10: disabled attribute</p>
+      <p>we can use disable attribute equals to dynamic zero or one!</p>
+      <!-- end 10 -->
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<style>
+  section {
+    margin: 16px;
+    padding: 12px;
+    border: 1px solid black;
+  }
+
+  .dynamic-styling-on-p {
+    border: 1px solid black;
+    cursor: pointer;
+  }
+</style>

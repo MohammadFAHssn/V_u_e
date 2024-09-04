@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 1: How Vue updates the DOM -->
+      <section>
+        <h2>1: How Vue updated the DOM</h2>
+
+        <p>
+          Vue only updated things that is changed and nothing else on the
+          screen. Vue should not re-render the entire page every time something
+          changes, but only the parts that did change. Now, how could Vue ensure
+          that this is the case, that it does not re-render the entire screen.
+          And Vue does that with a concept called the virtual DOM. It basically
+          has a virtual copy of the real DOM. And when data changes, it
+          basically just creates a new Virtual DOM you could say and compares
+          the new Virtual DOM to the old Virtual DOM and only differences
+          between those Virtual DOMS are written to the real DOM
+        </p>
+
+        <p>
+          Vue instance: const vueApp = Vue.createApp(...); vueApp.mount("#app")
+        </p>
+      </section>
+    </div>
+    <!-- end 1 -->
+
+    <!-- 2: Vue App Lifecycle -->
+    <section>
+      <h2>2: Vue app Lifecycle</h2>
+      <img
+        src="./008 Vue App Lifecycle - Theory.mp4_20240904_091042.628.jpg"
+        width="700px"
+      />
+      <p>
+        and that there are various steps for bringing something onto the screen
+        Sometimes you need to run code during those steps
+      </p>
+
+      <ul>
+        <li>
+          beforeCreate() and created(): The difference is that beforeCreate is
+          basically called before the app has been fully initialized, whereas
+          created is called thereafter. At this point of time we still have
+          nothing on the screen though, After created Vue just knows its data
+          properties
+        </li>
+
+        <li>
+          Compile template: So where all the dynamic placeholders all the
+          interpolations and so on are removed and replaced with the concrete
+          values that should be shown to the user
+        </li>
+
+        <li>
+          beforeUpdate and updated: This by the way, also means that at this
+          point of time the update is visible on the screen So we don't reach
+          mounted again because the template was never unmounted so it always
+          was visible
+        </li>
+
+        <li>
+          instance unmounted: When an app is unmounted all its content is
+          removed from the screen and the app is dead. You can for example, use
+          these hooks to execute any cleanup code you might wanna do.
+        </li>
+      </ul>
+    </section>
+    <!-- end 2 -->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<style>
+  section {
+    margin: 16px;
+    padding: 12px;
+    border: 1px solid black;
+  }
+</style>
