@@ -7,11 +7,30 @@ export default {}
 
   <section class="tip">
     <h3>Props</h3>
-    <p>
-      we pass props into components using kebab-case naming, and read this Props in the other side
-      using camel-case naming. Vue automatically translates kebab-case into camel-case
-    </p>
+    <ul>
+      <li>Props typically should not be mutated(unidirectional data flow)</li>
 
-    <p>Props typically should not be mutated(unidirectional data flow)</p>
+      <li>
+        validating props:
+        <pre>
+          <code>
+            props: { 
+              age: { 
+                type: Number,
+                required: true,
+                // default: 0,
+                default: function(){},
+                }
+                validator: function(passedData){
+                  if (passedData === validateDataForThisComponent){
+                    return true;
+                  }
+                  return false;
+                }
+            }
+          </code>
+        </pre>
+      </li>
+    </ul>
   </section>
 </template>
