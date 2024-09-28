@@ -11,6 +11,7 @@ export default {}
     <ul>
       <li><RouterLink to="/">Home</RouterLink></li>
       <li><RouterLink to="/component-communication">Component Communication</RouterLink></li>
+      <li><RouterLink to="/other">Other</RouterLink></li>
     </ul>
   </nav>
 
