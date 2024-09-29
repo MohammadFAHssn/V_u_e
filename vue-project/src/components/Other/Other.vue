@@ -8,7 +8,14 @@ export default {}
   <section class="tip">
     <h3>Call by reference in js</h3>
     <ul>
-      <li><img src="./call-by-reference.png" width="400px" /></li>
+      <li><img src="/src/assets/images/call-by-reference.png" width="400px" /></li>
+    </ul>
+  </section>
+
+  <section class="tip">
+    <h3>client side validation</h3>
+    <ul>
+      <li><img src="/src/assets/images/client-side-validation.png" width="700px" /></li>
     </ul>
   </section>
 </template>
