@@ -31,6 +31,66 @@ export default {}
           </code>
         </pre>
       </li>
+
+      <li>
+        prop drilling(pass-through problems):
+        <div>
+          in parent:
+          <pre>
+            <code>
+              export default {
+                provide(){
+                  return props: this.props
+                }
+              }
+            </code>
+          </pre>
+          in child:
+          <pre>
+            <code>
+              export default {
+                inject: ["props"]
+              }
+            </code>
+          </pre>
+        </div>
+      </li>
+
+      <li>
+        custom event drilling(pass-through problems):
+        <div>
+          in child:
+          <pre>
+            <code>
+              &lt;button @click="somethingChange(id)"&gt;&lt;button&gt;
+              export default {
+                inject: ["somethingChange"]
+              }
+            </code>
+          </pre>
+          in parent:
+          <pre>
+            <code>
+              &lt;child&gt;&lt;/child&gt;
+
+              export default {
+                provide(){
+                  return {
+                    props: this.props,
+                    someThingChange: this.OnchangeSomething
+                    }
+                }
+
+                method:{
+                  OnchangeSomething(id){
+                    // ...
+                  }
+                }
+              }
+            </code>
+          </pre>
+        </div>
+      </li>
     </ul>
   </section>
 </template>
