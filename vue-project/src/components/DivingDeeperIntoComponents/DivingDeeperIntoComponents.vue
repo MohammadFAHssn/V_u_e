@@ -6,6 +6,10 @@ export default {}
   <h2>Diving Deeper Into Components</h2>
 
   <section class="tip">
+    <h3>global component</h3>
+  </section>
+
+  <section class="tip">
     <h3>more on slots</h3>
 
     <ul>
@@ -24,35 +28,36 @@ export default {}
           </code>
         </pre>
       </li>
-
-      <li>
-        scoped slots:
-        <div>
-          parent:
-          <pre>
-              <code>
-                &lt;child&gt;
-                    &lt;template #chem=&quot;slotProps&quot;&gt;
-                        &lt;p&gt;&lcub;&lcub;slotProps.goal&quest;&quest;&lt;/p&gt;
-                    &lt;/template&gt;
-                &lt;/child&gt;
-              </code>
-            </pre>
-        </div>
-
-        <div>
-          child:
-          <pre>
-              <code>
-                &lt;ul&gt;
-                    &lt;li v-for=&quot;goal in goals&quot; :key=&quot;goal&quot;&gt;
-                        &lt;slot name=&quot;chem&quot; :goal=&quot;goal&quot;&gt;&lt;/slot&gt;
-                    &lt;/li&gt;
-                &lt;/ul&gt;
-              </code>
-            </pre>
-        </div>
-      </li>
     </ul>
+  </section>
+
+  <section class="tip">
+    <h3>scoped slots</h3>
+
+    <div>
+      parent:
+      <pre>
+        <code>
+        &lt;child&gt;
+            &lt;template #chem=&quot;slotProps&quot;&gt;
+                &lt;p&gt;&lcub;&lcub;slotProps.goal&rcub;&rcub;&lt;/p&gt;
+            &lt;/template&gt;
+        &lt;/child&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div>
+      child:
+      <pre>
+        <code>
+        &lt;ul&gt;
+            &lt;li v-for=&quot;goal in goals&quot; :key=&quot;goal&quot;&gt;
+                &lt;slot name=&quot;chem&quot; :goal=&quot;goal&quot;&gt;&lt;/slot&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        </code>
+      </pre>
+    </div>
   </section>
 </template>
