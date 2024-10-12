@@ -78,4 +78,17 @@ export default {}
       if the selected component is child1 then the child1 will be shown.
     </div>
   </section>
+
+  <!-- keeping dynamic component alive -->
+  <section class="tip">
+    <h3>keeping dynamic component alive</h3>
+    if the selectedComponent is destroyed and removed from the DOM, its state is preserved.
+    <pre>
+        <code>
+            &lt;keep-alive&gt;
+                &lt;compomnent :is=&quot;selectedComponent&quot;&gt;&lt;/compomnent&gt;
+            &lt;keep-alive/&gt;
+        </code>
+      </pre>
+  </section>
 </template>
