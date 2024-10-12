@@ -89,6 +89,18 @@ export default {}
                 &lt;compomnent :is=&quot;selectedComponent&quot;&gt;&lt;/compomnent&gt;
             &lt;keep-alive/&gt;
         </code>
-      </pre>
+    </pre>
+  </section>
+
+  <!-- teleporting elements  -->
+  <section class="div">
+    <h3>teleporting elements</h3>
+    <pre>
+        <code>
+            <teleport>
+                <p>some thing</p>
+            </teleport>
+        </code>
+    </pre>
   </section>
 </template>
