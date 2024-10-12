@@ -17,7 +17,7 @@ export default {}
         default slot content:
         <div>
           if you have a slot which receives no content, that this slot can then render some default
-          content
+          content. we can add default content by adding content between our slots tags.
         </div>
       </li>
 
