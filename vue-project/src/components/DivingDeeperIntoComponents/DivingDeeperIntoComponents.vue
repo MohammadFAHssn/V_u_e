@@ -5,10 +5,12 @@ export default {}
 <template>
   <h2>Diving Deeper Into Components</h2>
 
+  <!-- global component -->
   <section class="tip">
     <h3>global component</h3>
   </section>
 
+  <!-- more on slots -->
   <section class="tip">
     <h3>more on slots</h3>
 
@@ -31,6 +33,7 @@ export default {}
     </ul>
   </section>
 
+  <!-- scoped slots -->
   <section class="tip">
     <h3>scoped slots</h3>
 
@@ -58,6 +61,21 @@ export default {}
         &lt;/ul&gt;
         </code>
       </pre>
+    </div>
+  </section>
+
+  <!-- dynamic components -->
+  <section class="tip">
+    <h3>dynamic components</h3>
+
+    <div>
+      the build-in vue &lt;component&gt;&lt;/component&gt; tag:
+      <pre>
+        <code>
+            &lt;component :is=&quot;selectedComponent&quot;&gt;&lt;/component&gt;
+        </code>
+      </pre>
+      if the selected component is child1 then the child1 will be shown.
     </div>
   </section>
 </template>
