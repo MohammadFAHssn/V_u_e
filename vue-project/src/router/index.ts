@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import ComponentCommunication from '../components/ComponentCommunication/ComponentCommunication.vue'
 import DivingDeeperIntoComponents from '../components/DivingDeeperIntoComponents/DivingDeeperIntoComponents.vue'
+import Forms from '../components/Forms/Forms.vue'
 
 import Other from '../components/Other/Other.vue'
 
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/diving-deeper-into-components',
       name: 'DivingDeeperIntoComponents',
       component: DivingDeeperIntoComponents
+    },
+    {
+      path: '/forms',
+      name: 'Forms',
+      component: Forms
     },
     {
       path: '/other',

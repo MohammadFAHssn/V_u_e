@@ -14,6 +14,9 @@ export default {}
       <li>
         <RouterLink to="/diving-deeper-into-components">Diving Deeper Into Components</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/forms">Forms</RouterLink>
+      </li>
       <li><RouterLink to="/other">Other</RouterLink></li>
     </ul>
   </nav>
