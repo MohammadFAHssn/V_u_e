@@ -97,9 +97,9 @@ export default {}
     <h3>teleporting elements</h3>
     <pre>
         <code>
-            <teleport>
-                <p>some thing</p>
-            </teleport>
+          &lt;teleport to=&quot;cssSelector&quot;&gt;
+            &lt;p&gt;some thing&lt;/p&gt;
+          &lt;/teleport&gt;
         </code>
     </pre>
   </section>
