@@ -10,6 +10,10 @@
         if the type of an input element is number the variable assigned to v-model is a type of
         number. but the this.$refs.exampleInput.value is string
       </li>
+
+      <li>
+        <img src="/src/assets/images/v-model.png" width="700px" />
+      </li>
     </ul>
   </section>
 </template>
