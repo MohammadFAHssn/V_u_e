@@ -14,6 +14,8 @@
       <li>
         <img src="/src/assets/images/v-model.png" width="700px" />
       </li>
+
+      <li></li>
     </ul>
   </section>
 </template>
