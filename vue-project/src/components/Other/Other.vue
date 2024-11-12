@@ -18,4 +18,8 @@ export default {}
       <li><img src="/src/assets/images/client-side-validation.png" width="700px" /></li>
     </ul>
   </section>
+
+  <section class="tip">
+    <p>@blur: when the input loses focus</p>
+  </section>
 </template>
