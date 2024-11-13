@@ -3,7 +3,7 @@ import Home from '../components/Home.vue'
 import ComponentCommunication from '../components/ComponentCommunication/ComponentCommunication.vue'
 import DivingDeeperIntoComponents from '../components/DivingDeeperIntoComponents/DivingDeeperIntoComponents.vue'
 import Forms from '../components/Forms/Forms.vue'
-
+import RoutingBuildingMultiPageSinglePageApplications from '../components/RoutingBuildingMultiPageSinglePageApplications/RoutingBuildingMultiPageSinglePageApplications.vue'
 import Other from '../components/Other/Other.vue'
 
 const router = createRouter({
@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/forms',
       name: 'Forms',
       component: Forms
+    },
+    {
+      path: '/routing-building-multi-page-single-page-applications',
+      name: 'RoutingBuildingMultiPageSinglePageApplications',
+      component: RoutingBuildingMultiPageSinglePageApplications
     },
     {
       path: '/other',

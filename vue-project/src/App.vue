@@ -17,6 +17,11 @@ export default {}
       <li>
         <RouterLink to="/forms">Forms</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/routing-building-multi-page-single-page-applications"
+          >Routing Building Multi Page Single Page Applications</RouterLink
+        >
+      </li>
       <li><RouterLink to="/other">Other</RouterLink></li>
     </ul>
   </nav>
