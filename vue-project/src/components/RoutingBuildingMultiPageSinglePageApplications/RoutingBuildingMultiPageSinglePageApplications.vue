@@ -83,4 +83,13 @@ export default {}
       <li>The view router does not destroy and rebuild the components that were loaded</li>
     </ul>
   </section>
+
+  <!--  Passing Params as Props -->
+  <section class="tip">
+    <h3>Passing Params as Props</h3>
+
+    <p>{path: "/teams/:teamId", component: TeamMembers, props: true}</p>
+
+    <p>in the "TeamMembers" component: props=["teamId"]</p>
+  </section>
 </template>
