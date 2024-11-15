@@ -40,4 +40,17 @@ export default {}
       </li>
     </ul>
   </section>
+
+  <!--  programmatic navigation -->
+  <section class="tip">
+    <h3>programmatic navigation</h3>
+
+    <ul>
+      <li>if you want to go to "/test" route: this.$router.push('/test')</li>
+
+      <li>this.$router.forward</li>
+
+      <li>this.$router.back</li>
+    </ul>
+  </section>
 </template>
