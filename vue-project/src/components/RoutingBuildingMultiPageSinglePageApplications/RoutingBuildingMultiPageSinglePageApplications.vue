@@ -53,4 +53,34 @@ export default {}
       <li>this.$router.back</li>
     </ul>
   </section>
+
+  <!--  Passing Data with Route Params (Dynamic Segments) -->
+  <section class="tip">
+    <h3>Passing Data with Route Params (Dynamic Segments)</h3>
+
+    <ul>
+      <li>
+        <img
+          src="/src/assets/images/Passing-Data-with-Route-Params-Dynamic-Segments.png"
+          width="400px"
+        />
+      </li>
+
+      <li>
+        that means that this route will become active if the user enters /teams and then anything
+        thereafter
+      </li>
+
+      <li>
+        the order matters by the way. if you had another route here /teams/new, you should put this
+        first because otherwise this path here this route would match this route as well, because
+        new would be interpreted as a team ID.
+      </li>
+
+      <li>this.$route.path: /teams/t1</li>
+      <li>this.$route.params.teamId</li>
+
+      <li>The view router does not destroy and rebuild the components that were loaded</li>
+    </ul>
+  </section>
 </template>
