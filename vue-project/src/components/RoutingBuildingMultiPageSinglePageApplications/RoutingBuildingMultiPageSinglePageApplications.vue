@@ -92,4 +92,30 @@ export default {}
 
     <p>in the "TeamMembers" component: props=["teamId"]</p>
   </section>
+
+  <!--  Redirecting & Catch All Routes -->
+  <section class="tip">
+    <h3>Redirecting & Catch All Routes</h3>
+
+    <ul>
+      <li>
+        <p>{path: "/", redirect: "/teams"}</p>
+        <p>or</p>
+        <p>
+          {path: "/teams", alias: "/"} ==> in this use case, is that the URL doesn't change, And
+          that's the difference to a redirect, With a redirect the URL is changed, You are really
+          redirected to a different path, With an alias, the URL does not change, You just load the
+          same component as on a different route
+        </p>
+      </li>
+
+      <li>
+        Another thing which we're not handling in this demo here is the use case that the user
+        enters any route which is not supported. That's why you can define "catch all" routes. So
+        here I'll add a new route at the end. because it should have the lowest priority, and only
+        kick in if no other route handles this.
+        <p>{path: "/:harChi(*.)", redirect: "/"}</p>
+      </li>
+    </ul>
+  </section>
 </template>
