@@ -118,4 +118,9 @@ export default {}
       </li>
     </ul>
   </section>
+
+  <!--  Using Nested Routes -->
+  <section class="tip">
+    <h3>Using Nested Routes -> nested components!</h3>
+  </section>
 </template>
