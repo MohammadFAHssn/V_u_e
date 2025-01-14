@@ -114,7 +114,7 @@ export default {}
         enters any route which is not supported. That's why you can define "catch all" routes. So
         here I'll add a new route at the end. because it should have the lowest priority, and only
         kick in if no other route handles this.
-        <p>{path: "/:harChi(*.)", redirect: "/"}</p>
+        <p>{path: "/:harChi(.*)", redirect: "/"} ==> (.*) ==> any character combination</p>
       </li>
     </ul>
   </section>
