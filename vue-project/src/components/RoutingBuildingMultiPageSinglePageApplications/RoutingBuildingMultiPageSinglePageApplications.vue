@@ -128,4 +128,9 @@ export default {}
   <section class="tip">
     <h3>Rendering Multiple Routes with Named Router Views</h3>
   </section>
+
+  <!--  Controlling Scroll Behavior -->
+  <section class="tip">
+    <h3>Controlling Scroll Behavior</h3>
+  </section>
 </template>
