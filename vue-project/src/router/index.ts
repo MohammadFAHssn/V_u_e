@@ -11,32 +11,32 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      // name: 'home',
       component: Home
     },
     {
       path: '/component-communication',
-      name: 'componentCommunication',
+      // name: 'componentCommunication',
       component: ComponentCommunication
     },
     {
       path: '/diving-deeper-into-components',
-      name: 'DivingDeeperIntoComponents',
+      // name: 'DivingDeeperIntoComponents',
       component: DivingDeeperIntoComponents
     },
     {
       path: '/forms',
-      name: 'Forms',
+      // name: 'Forms',
       component: Forms
     },
     {
       path: '/routing-building-multi-page-single-page-applications',
-      name: 'RoutingBuildingMultiPageSinglePageApplications',
+      // name: 'RoutingBuildingMultiPageSinglePageApplications',
       component: RoutingBuildingMultiPageSinglePageApplications
     },
     {
       path: '/other',
-      name: 'other',
+      // name: 'other',
       component: Other
     }
   ]
