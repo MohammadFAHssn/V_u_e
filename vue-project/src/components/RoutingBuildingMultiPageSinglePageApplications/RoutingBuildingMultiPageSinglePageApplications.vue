@@ -123,4 +123,9 @@ export default {}
   <section class="tip">
     <h3>Using Nested Routes -> nested components!</h3>
   </section>
+
+  <!--  Rendering Multiple Routes with Named Router Views -->
+  <section class="tip">
+    <h3>Rendering Multiple Routes with Named Router Views</h3>
+  </section>
 </template>
