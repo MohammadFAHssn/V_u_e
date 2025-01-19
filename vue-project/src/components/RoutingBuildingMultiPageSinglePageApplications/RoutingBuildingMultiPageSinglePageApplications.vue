@@ -133,4 +133,24 @@ export default {}
   <section class="tip">
     <h3>Controlling Scroll Behavior</h3>
   </section>
+
+  <!--  Introducing Navigation Guards -->
+  <section class="tip">
+    <h3>Introducing Navigation Guards</h3>
+
+    <ul>
+      <li>
+        Navigation guards can be useful if you add features like authentication, where you, for
+        example want to avoid that a user is able to access a certain route
+      </li>
+
+      <li>
+        I'm talking about functions, methods which are called automatically by view router when a
+        page changes or to be precise when a navigation action started.
+      </li>
+
+      <li><img src="/src/assets/images/Introducing-Navigation-Guards.png" width="400px" /></li>
+      <li><img src="/src/assets/images/Introducing-Navigation-Guards-2.png" width="700px" /></li>
+    </ul>
+  </section>
 </template>

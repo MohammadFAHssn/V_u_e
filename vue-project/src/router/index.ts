@@ -42,4 +42,16 @@ const router = createRouter({
   ]
 })
 
+router.beforeEach((from, to, next) => {
+  // if in here the "from" and "to" is unused (of course we must use theme in real project!)
+  // we can -> << router.beforeEach((_, _2, next) => { >> or in any function that
+  // I have to take these arguments in order to reach the third one but then I don't plan on using them
+
+  // "next": which is a function which we have to call to either confirm or
+  // cancel(next(false)) this navigation action
+  next()
+  // or
+  // next("/some-route") // you would create an infinite loop
+})
+
 export default router

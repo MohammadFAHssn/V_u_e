@@ -14,6 +14,9 @@ const app = createApp(App)
 app.component('GlobalComponent', GlobalComponent)
 
 app.use(createPinia())
+
+router.beforeEach(() => {})
+
 app.use(router)
 
 app.mount('#app')
