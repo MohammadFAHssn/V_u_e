@@ -192,4 +192,19 @@ export default {}
       <li></li>
     </ul>
   </section>
+
+  <!-- Utilizing Route Metadata -->
+  <section class="tip">
+    <h3>Utilizing Route Metadata</h3>
+    <ul>
+      <li>
+        <img src="/src/assets/images/Utilizing-Route-Metadata.png" width="300px" />. Meta takes any
+        kind of value. you can access this meta field in all the places where the $route object is
+        available, And that's the case inside of components. 'needsAuth' can be any thing
+      </li>
+      <li>
+        <img src="/src/assets/images/Utilizing-Route-Metadata-2.png" width="350px" />
+      </li>
+    </ul>
+  </section>
 </template>
