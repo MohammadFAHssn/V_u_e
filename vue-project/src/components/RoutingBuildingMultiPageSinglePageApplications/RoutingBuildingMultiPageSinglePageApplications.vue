@@ -153,4 +153,43 @@ export default {}
       <li><img src="/src/assets/images/Introducing-Navigation-Guards-2.png" width="700px" /></li>
     </ul>
   </section>
+
+  <!-- Diving Deeper Into Navigation Guards -->
+  <section class="tip">
+    <h3>Diving Deeper Into Navigation Guards</h3>
+
+    <ul>
+      <li>
+        sometimes you just wanna protect individual routes:
+        <img src="/src/assets/images/Diving-Deeper-Into-Navigation-Guards.png" width="250px" />
+      </li>
+
+      <li>
+        <img src="/src/assets/images/Diving-Deeper-Into-Navigation-Guards-2.png" width="300px" />
+      </li>
+
+      <li>
+        And that's the order in which these navigation guards execute, Global is always first, then
+        the route conflict level and then the component level
+      </li>
+
+      <li>
+        beforeRouteUpdate : called when the route that renders this component has changed, but this
+        component is reused in the new route. For example, given a route with params `/users/:id`,
+        when we navigate between `/users/1` and `/users/2`, the same `UserDetails` component
+        instance will be reused, and this hook will be called when that happens.
+      </li>
+
+      <li>
+        will only run once a navigation has been confirmed:
+        <img src="/src/assets/images/Diving-Deeper-Into-Navigation-Guards-3.png" width="300px" />
+      </li>
+
+      <li>
+        <img src="/src/assets/images/Diving-Deeper-Into-Navigation-Guards-4.png" width="500px" />
+      </li>
+
+      <li></li>
+    </ul>
+  </section>
 </template>
