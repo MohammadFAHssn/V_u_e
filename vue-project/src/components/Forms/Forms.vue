@@ -1,3 +1,7 @@
+<script lang="ts">
+export default {}
+</script>
+
 <template>
   <h2>Forms</h2>
 
@@ -24,7 +28,3 @@
     <h3>Using v-model on Custom Components(Component v-model)</h3>
   </section>
 </template>
-
-<script>
-export default {}
-</script>

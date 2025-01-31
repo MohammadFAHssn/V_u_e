@@ -4,6 +4,7 @@ import ComponentCommunication from '../components/ComponentCommunication/Compone
 import DivingDeeperIntoComponents from '../components/DivingDeeperIntoComponents/DivingDeeperIntoComponents.vue'
 import Forms from '../components/Forms/Forms.vue'
 import RoutingBuildingMultiPageSinglePageApplications from '../components/RoutingBuildingMultiPageSinglePageApplications/RoutingBuildingMultiPageSinglePageApplications.vue'
+import Animations_Transitions from '../components/Animations_Transitions/Animations_Transitions.vue'
 import Other from '../components/Other/Other.vue'
 
 const router = createRouter({
@@ -33,6 +34,10 @@ const router = createRouter({
       path: '/routing-building-multi-page-single-page-applications',
       // name: 'RoutingBuildingMultiPageSinglePageApplications',
       component: RoutingBuildingMultiPageSinglePageApplications
+    },
+    {
+      path: '/animations-transitions',
+      component: Animations_Transitions
     },
     {
       path: '/other',

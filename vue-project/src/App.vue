@@ -22,6 +22,9 @@ export default {}
           >Routing Building Multi Page Single Page Applications</RouterLink
         >
       </li>
+      <li>
+        <RouterLink to="/animations-transitions">Animations & Transitions</RouterLink>
+      </li>
       <li><RouterLink to="/other">Other</RouterLink></li>
     </ul>
   </nav>
