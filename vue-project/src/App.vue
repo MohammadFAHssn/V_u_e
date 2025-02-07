@@ -25,6 +25,9 @@ export default {}
       <li>
         <RouterLink to="/animations-transitions">Animations & Transitions</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/vuex">Vuex</RouterLink>
+      </li>
       <li><RouterLink to="/other">Other</RouterLink></li>
     </ul>
   </nav>

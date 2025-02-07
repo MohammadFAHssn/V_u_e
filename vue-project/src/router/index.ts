@@ -5,6 +5,7 @@ import DivingDeeperIntoComponents from '../components/DivingDeeperIntoComponents
 import Forms from '../components/Forms/Forms.vue'
 import RoutingBuildingMultiPageSinglePageApplications from '../components/RoutingBuildingMultiPageSinglePageApplications/RoutingBuildingMultiPageSinglePageApplications.vue'
 import Animations_Transitions from '../components/Animations_Transitions/Animations_Transitions.vue'
+import Vuex from '../components/Vuex/Vuex.vue'
 import Other from '../components/Other/Other.vue'
 
 const router = createRouter({
@@ -38,6 +39,10 @@ const router = createRouter({
     {
       path: '/animations-transitions',
       component: Animations_Transitions
+    },
+    {
+      path: '/vuex',
+      component: Vuex
     },
     {
       path: '/other',
