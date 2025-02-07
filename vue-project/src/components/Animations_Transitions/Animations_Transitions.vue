@@ -3,5 +3,12 @@ export default {}
 </script>
 
 <template>
-  <div>!</div>
+  <h2>Animations & Transitions</h2>
+
+  <!-- Animation Basics & CSS Transitions -->
+  <section class="tip">
+    <h3>Animation Basics & CSS Transitions</h3>
+
+    MAYBE LATER: 2:00
+  </section>
 </template>
