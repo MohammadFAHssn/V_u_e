@@ -22,4 +22,25 @@ export default {}
       </li>
     </ul>
   </section>
+
+  <!-- Creating & Using a Store -->
+  <section class="tip">
+    <h3>Creating & Using a Store</h3>
+
+    <ul>
+      <li>firs for global:</li>
+
+      <li>
+        <img src="/src/assets/images/vuex.png" width="300px" />
+      </li>
+
+      <li>
+        <img src="/src/assets/images/vuex-2.png" width="350px" />
+      </li>
+
+      <li>
+        <img src="/src/assets/images/vuex-3.png" width="300px" />
+      </li>
+    </ul>
+  </section>
 </template>
