@@ -28,7 +28,7 @@ export default {}
     <h3>Creating & Using a Store</h3>
 
     <ul>
-      <li>firs for global:</li>
+      <li>first for global:</li>
 
       <li>
         <img src="/src/assets/images/vuex.png" width="300px" />
@@ -40,6 +40,48 @@ export default {}
 
       <li>
         <img src="/src/assets/images/vuex-3.png" width="300px" />
+      </li>
+    </ul>
+  </section>
+
+  <!-- Introducing Mutations - A Better Way of Changing Data -->
+  <section class="tip">
+    <h3>Introducing Mutations - A Better Way of Changing Data</h3>
+
+    <ul>
+      <li>
+        <img
+          src="/src/assets/images/Introducing Mutations - A Better Way of Changing Data.png"
+          width="300px"
+        />
+      </li>
+
+      <li>
+        <img
+          src="/src/assets/images/Introducing Mutations - A Better Way of Changing Data - 2.png"
+          width="300px"
+        />
+      </li>
+
+      <li>
+        <strong>
+          in this way, if we change some state in a place and use it in another place, we don't have
+          to refresh the page!
+        </strong>
+      </li>
+
+      <li>
+        <img
+          src="/src/assets/images/Introducing Mutations - A Better Way of Changing Data - 3.png"
+          width="350px"
+        />
+      </li>
+
+      <li>
+        <img
+          src="/src/assets/images/Introducing Mutations - A Better Way of Changing Data - 4.png"
+          width="350px"
+        />
       </li>
     </ul>
   </section>
