@@ -85,4 +85,34 @@ export default {}
       </li>
     </ul>
   </section>
+
+  <!-- Introducing Getters - A Better Way Of Getting Data -->
+  <section class="tip">
+    <h3>Introducing Getters - A Better Way Of Getting Data</h3>
+
+    <ul>
+      <li>
+        <img
+          src="/src/assets/images/Introducing Getters - A Better Way Of Getting Data 4.png"
+          width="400px"
+        />
+        and other getters, Getting other getters in a getter, can be helpful if the value you wanna
+        calculate here, depends on the result of an another getter
+      </li>
+
+      <li>
+        <img
+          src="/src/assets/images/Introducing Getters - A Better Way Of Getting Data 2.png"
+          width="300px"
+        />
+      </li>
+
+      <li>
+        <img
+          src="/src/assets/images/Introducing Getters - A Better Way Of Getting Data 3.png"
+          width="400px"
+        />
+      </li>
+    </ul>
+  </section>
 </template>
