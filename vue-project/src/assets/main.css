@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Montserrat;
+  src: url('/src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+html,
+body,
+* {
+  font-family: Montserrat;
+}
+
 .tip {
   border: 1px solid black;
 
