@@ -14,6 +14,8 @@
 014 Locking Content with v-once
 003 Vue Reactivity A Deep Dive
 
+Udemy - Vue - The Complete Guide (incl. Router & Composition API) 2023-5\15 - Vuex\010 Using Mapper Helpers.mp4
+
 ## building first app
 
 go to vuejs.org -> install link
