@@ -115,4 +115,38 @@ export default {}
       </li>
     </ul>
   </section>
+
+  <!-- Running Async Code with Actions -->
+  <section>
+    <h3>Running Async Code with Actions</h3>
+
+    <ul>
+      <li>
+        Let's say, in the increment mutation, we don't wanna increment immediately, Instead, we
+        wanna wait two seconds and then increment(asynchronously). The problem is that Mutations
+        must be synchronous. The reason for that simply is that if multiple Mutations execute, every
+        mutation should get the latest state. Components should trigger Actions which then in turn
+        commit Mutations.
+      </li>
+
+      <li>
+        You can use the same name here as you do in your Mutations. often you will because often you
+        just have an action in between a component and a mutation.
+      </li>
+
+      <li>
+        <img src="/src/assets/images/actions-in-vuex.png" width="300px" />
+      </li>
+
+      <li><img src="/src/assets/images/use-actions-in-vuex.png" width="400px" /></li>
+
+      <li>
+        the context object: So what's inside of context as well: but let's have a look at
+        <strong>dispatch</strong>: You can also dispatch a number action from inside an action. You
+        can also access <strong>getters</strong>. And you can also directly tap into the
+        <strong>state</strong>. You should not manipulate the state from inside the action though,
+        Always use a mutation for that.
+      </li>
+    </ul>
+  </section>
 </template>
