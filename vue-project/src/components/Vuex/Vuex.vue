@@ -208,4 +208,30 @@ export default {}
       <img src="/src/assets/images/Understanding-Local-Module-State.png" width="500px" />
     </p>
   </section>
+
+  <!-- Namespacing Modules -->
+  <section class="tip">
+    <h3>Namespacing Modules</h3>
+
+    <p>
+      You can make it name spaced, as it's called, to make sure that multiple modules are clearly
+      separated from each other. Now why might you wanna do that? Well, as you're application grows,
+      you could of course have name clashes. You might be using the same getter or the same action
+      name in different modules of the same store.
+    </p>
+
+    <p>
+      <img src="/src/assets/images/Namespacing-Modules.png" width="250px" />
+    </p>
+
+    <p>
+      <img src="/src/assets/images/Namespacing-Modules-2.png" width="600px" />
+    </p>
+
+    <p>
+      <img src="/src/assets/images/Namespacing-Modules-3.png" width="550px" />
+    </p>
+  </section>
+
+  <section class="tip"></section>
 </template>
