@@ -188,4 +188,24 @@ export default {}
       <img src="/src/assets/images/Organizing-your-Store-with-Modules-2.png" width="300px" />
     </p>
   </section>
+
+  <!-- Understanding Local Module State -->
+  <section class="tip">
+    <h3>Understanding Local Module State</h3>
+
+    <p>
+      I mentioned that modules are merged into your main store on the same level as all the other
+      things in the store. Let's say inside of the counter module, inside of a mutation, inside of
+      the increased mutation let's say , we console.log, our state. Well, let's have a look what
+      happens. This is the log here for our state. And if we have a look at this, we see something
+      interesting. We see the counter in there. But there's one thing we don't see in here. Our
+      authentication state. Because the state inside of a module, is actually treated as a local
+      state, inside of the module.
+    </p>
+    <p>in a getter, I would not be able to get the auth status.</p>
+    <p>
+      Now in case you need to work around that, there are ways though.
+      <img src="/src/assets/images/Understanding-Local-Module-State.png" width="500px" />
+    </p>
+  </section>
 </template>
