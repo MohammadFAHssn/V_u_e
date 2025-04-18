@@ -28,6 +28,9 @@ export default {}
       <li>
         <RouterLink to="/vuex">Vuex</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/Vue_Authentication">Vue & Authentication</RouterLink>
+      </li>
       <li><RouterLink to="/other">Other</RouterLink></li>
     </ul>
   </nav>

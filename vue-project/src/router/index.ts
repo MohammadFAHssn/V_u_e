@@ -6,6 +6,7 @@ import Forms from '../components/Forms/Forms.vue'
 import RoutingBuildingMultiPageSinglePageApplications from '../components/RoutingBuildingMultiPageSinglePageApplications/RoutingBuildingMultiPageSinglePageApplications.vue'
 import Animations_Transitions from '../components/Animations_Transitions/Animations_Transitions.vue'
 import Vuex from '../components/Vuex/Vuex.vue'
+import Vue_Authentication from '../components/Vue_Authentication/Vue_Authentication.vue'
 import Other from '../components/Other/Other.vue'
 
 const router = createRouter({
@@ -43,6 +44,10 @@ const router = createRouter({
     {
       path: '/vuex',
       component: Vuex
+    },
+    {
+      path: '/Vue_Authentication',
+      component: Vue_Authentication
     },
     {
       path: '/other',
