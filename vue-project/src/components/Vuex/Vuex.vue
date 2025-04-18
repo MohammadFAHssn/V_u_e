@@ -233,5 +233,12 @@ export default {}
     </p>
   </section>
 
+  <!-- Structuring Vuex Code & Files -->
+  <section class="tip">
+    <h3>Structuring Vuex Code & Files</h3>
+
+    <p>go to ./store</p>
+  </section>
+
   <section class="tip"></section>
 </template>
