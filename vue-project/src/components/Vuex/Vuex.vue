@@ -117,7 +117,7 @@ export default {}
   </section>
 
   <!-- Running Async Code with Actions -->
-  <section>
+  <section class="tip">
     <h3>Running Async Code with Actions</h3>
 
     <ul>
@@ -148,5 +148,31 @@ export default {}
         Always use a mutation for that.
       </li>
     </ul>
+  </section>
+
+  <!-- Auth example -->
+  <section class="tip">
+    <h3>Auth example</h3>
+
+    <p>
+      of course we could manage this locally into component, but again, authentication might matter
+      to a lot of parts of this app. So we wanna manage it with vux and states.
+    </p>
+
+    <p>
+      <img src="/src/assets/images/auth-vuex.png" width="300px" />
+    </p>
+
+    <p>
+      <img src="/src/assets/images/auth-vuex-2.png" width="350px" />
+    </p>
+
+    <p>
+      <img src="/src/assets/images/auth-vuex-3.png" width="450px" />
+    </p>
+
+    <p>
+      <img src="/src/assets/images/auth-vuex-4.png" width="300px" />
+    </p>
   </section>
 </template>
