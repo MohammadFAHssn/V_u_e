@@ -175,4 +175,17 @@ export default {}
       <img src="/src/assets/images/auth-vuex-4.png" width="300px" />
     </p>
   </section>
+
+  <!-- Organizing your Store with Modules -->
+  <section class="tip">
+    <h3>Organizing your Store with Modules</h3>
+
+    <p>
+      <img src="/src/assets/images/Organizing-your-Store-with-Modules.png" width="500px" />
+    </p>
+
+    <p>
+      <img src="/src/assets/images/Organizing-your-Store-with-Modules-2.png" width="300px" />
+    </p>
+  </section>
 </template>
