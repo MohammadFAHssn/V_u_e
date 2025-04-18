@@ -18,6 +18,8 @@ Udemy - Vue - The Complete Guide (incl. Router & Composition API) 2023-5\15 - Vu
 
 15 - Vuex -> 016 A Challenge!.mp4
 
+17 - Vue & Authentication
+
 ## building first app
 
 go to vuejs.org -> install link
