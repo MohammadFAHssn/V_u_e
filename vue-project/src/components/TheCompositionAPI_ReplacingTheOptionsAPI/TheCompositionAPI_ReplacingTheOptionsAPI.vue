@@ -23,5 +23,21 @@ export default {}
     </p>
   </section>
 
+  <!-- Replacing data with refs -->
+  <section class="tip">
+    <h3>Replacing data with refs</h3>
+
+    <p>
+      <img src="/src/assets/images/from-options-api-to-composition-api.png" width="600px" />
+    </p>
+
+    <p>
+      all the other options we also learned about Props, emits, components, those remain untouched
+      by the Composition API
+    </p>
+
+    <p>The only other part which will also change will be the lifecycle methods</p>
+  </section>
+
   <span></span>
 </template>
