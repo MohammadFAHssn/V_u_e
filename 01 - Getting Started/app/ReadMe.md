@@ -13,10 +13,12 @@
 008 A First Summary
 014 Locking Content with v-once
 003 Vue Reactivity A Deep Dive
-
+14 - Animations & Transitions
 Udemy - Vue - The Complete Guide (incl. Router & Composition API) 2023-5\15 - Vuex\010 Using Mapper Helpers.mp4
-
 15 - Vuex -> 016 A Challenge!.mp4
+16 - Main Project Find a Coach Web App
+17 - Vue & Authentication
+18 - Optimizing & Deploying Vue Apps
 
 ## building first app
 
