@@ -138,5 +138,12 @@ setTimeout(function()&nbsp;{
     <p>it is simple, search it</p>
   </section>
 
+  <!-- How To Use Template Refs -->
+  <section class="tip">
+    <h3>How To Use Template Refs</h3>
+
+    <p>it is updated in +3.5, search it</p>
+  </section>
+
   <span></span>
 </template>
