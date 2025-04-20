@@ -109,5 +109,27 @@ setTimeout(function()&nbsp;{
     </p>
   </section>
 
-  <span> </span>
+  <!-- Replacing methods with Regular Functions -->
+  <section class="tip">
+    <h3>Replacing methods with Regular Functions</h3>
+
+    <div>
+      as, we write
+      <pre><code>user.value.name = "Max"</code></pre>
+      in setup() to change the value, we can use it in @click
+    </div>
+
+    <p>
+      <img src="/src/assets/images/Replacing-methods-with-Regular-Functions.png" width="500px" />
+    </p>
+  </section>
+
+  <!-- Replacing Computed Properties with the computed Function -->
+  <section class="tip">
+    <h3>Replacing Computed Properties with the computed Function</h3>
+
+    <p>it is simple, search it</p>
+  </section>
+
+  <span></span>
 </template>
