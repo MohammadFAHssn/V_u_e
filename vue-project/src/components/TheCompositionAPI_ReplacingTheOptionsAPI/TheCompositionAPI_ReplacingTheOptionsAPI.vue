@@ -95,5 +95,19 @@ setTimeout(function()&nbsp;{
     </div>
   </section>
 
+  <!-- Building reactive Objects -->
+  <section class="tip">
+    <h3>Building reactive Objects</h3>
+
+    <p>if we use in this way:</p>
+    <p>
+      <img src="/src/assets/images/Building-reactive-Objects.png" width="500px" />
+    </p>
+    <p>
+      every thing is ok, but the changes is not reflect to DOM, the reason is in return, we must
+      return the "ref" itself. i mean we must return the "user" itself.
+    </p>
+  </section>
+
   <span> </span>
 </template>
