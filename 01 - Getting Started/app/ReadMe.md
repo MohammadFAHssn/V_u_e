@@ -19,6 +19,7 @@ Udemy - Vue - The Complete Guide (incl. Router & Composition API) 2023-5\15 - Vu
 16 - Main Project Find a Coach Web App
 17 - Vue & Authentication
 18 - Optimizing & Deploying Vue Apps
+19 - The Composition API - Replacing the Options API\006 Reactivity A Deep Dive
 
 ## building first app
 
