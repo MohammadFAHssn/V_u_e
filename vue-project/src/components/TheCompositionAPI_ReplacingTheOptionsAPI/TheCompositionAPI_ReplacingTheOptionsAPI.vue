@@ -145,5 +145,21 @@ setTimeout(function()&nbsp;{
     <p>it is updated in +3.5, search it</p>
   </section>
 
+  <!-- Components, Props & The Composition API -->
+  <section class="tip">
+    <h3>Components, Props & The Composition API</h3>
+
+    <p>
+      <img src="/src/assets/images/Components-Props-The-Composition-API.png" width="500px" />
+    </p>
+  </section>
+
+  <!-- Emitting Custom Events and slots-->
+  <section class="tip">
+    <h3>Emitting Custom Events and slots</h3>
+
+    <p>search for Setup Context in vue</p>
+  </section>
+
   <span></span>
 </template>
