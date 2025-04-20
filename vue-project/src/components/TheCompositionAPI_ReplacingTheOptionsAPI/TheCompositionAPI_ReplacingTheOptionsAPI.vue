@@ -131,5 +131,12 @@ setTimeout(function()&nbsp;{
     <p>it is simple, search it</p>
   </section>
 
+  <!-- Working with Watchers -->
+  <section class="tip">
+    <h3>Working with Watchers</h3>
+
+    <p>it is simple, search it</p>
+  </section>
+
   <span></span>
 </template>
