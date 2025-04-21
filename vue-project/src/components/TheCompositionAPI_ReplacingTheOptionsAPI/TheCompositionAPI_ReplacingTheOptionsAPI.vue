@@ -161,5 +161,12 @@ setTimeout(function()&nbsp;{
     <p>search for Setup Context in vue</p>
   </section>
 
+  <!-- Working with Provide Inject -->
+  <section class="tip">
+    <h3>Working with Provide Inject</h3>
+
+    <p>it is simple, search it</p>
+  </section>
+
   <span></span>
 </template>
