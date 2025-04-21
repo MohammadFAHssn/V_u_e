@@ -175,5 +175,17 @@ setTimeout(function()&nbsp;{
     <p>it is simple, search it</p>
   </section>
 
+  <!-- Routing, Params & The Composition API -->
+  <section class="tip">
+    <h3>Routing, Params & The Composition API</h3>
+
+    <p>
+      <img src="/src/assets/images/Routing-Params-The-Composition-API.png" width="150px" />
+    </p>
+
+    <p>
+      <img src="/src/assets/images/Routing-Params-The-Composition-API-2.png" width="500px" />
+    </p>
+  </section>
   <span></span>
 </template>
