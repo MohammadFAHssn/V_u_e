@@ -187,5 +187,24 @@ setTimeout(function()&nbsp;{
       <img src="/src/assets/images/Routing-Params-The-Composition-API-2.png" width="500px" />
     </p>
   </section>
+
+  <!-- The Route & Router Objects and the Composition API -->
+  <section class="tip">
+    <h3>The Route & Router Objects and the Composition API</h3>
+
+    <p>
+      <img
+        src="/src/assets/images/The-Route-Router-Objects-and-the-Composition-API.png"
+        width="500px"
+      />
+    </p>
+
+    <p>
+      <img
+        src="/src/assets/images/The-Route-Router-Objects-and-the-Composition-API-2.png"
+        width="200px"
+      />
+    </p>
+  </section>
   <span></span>
 </template>
