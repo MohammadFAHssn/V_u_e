@@ -168,5 +168,12 @@ setTimeout(function()&nbsp;{
     <p>it is simple, search it</p>
   </section>
 
+  <!-- Lifecycle Hooks in the Composition API -->
+  <section class="tip">
+    <h3>Lifecycle Hooks in the Composition API</h3>
+
+    <p>it is simple, search it</p>
+  </section>
+
   <span></span>
 </template>
