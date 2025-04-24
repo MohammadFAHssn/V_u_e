@@ -7,6 +7,7 @@ import RoutingBuildingMultiPageSinglePageApplications from '../components/Routin
 import Animations_Transitions from '../components/Animations_Transitions/Animations_Transitions.vue'
 import Vuex from '../components/Vuex/Vuex.vue'
 import Vue_Authentication from '../components/Vue_Authentication/Vue_Authentication.vue'
+import TheCompositionAPI_ReplacingTheOptionsAPI from '../components/TheCompositionAPI_ReplacingTheOptionsAPI/TheCompositionAPI_ReplacingTheOptionsAPI.vue'
 import Other from '../components/Other/Other.vue'
 
 const router = createRouter({
@@ -48,6 +49,10 @@ const router = createRouter({
     {
       path: '/Vue_Authentication',
       component: Vue_Authentication
+    },
+    {
+      path: '/TheCompositionAPI_ReplacingTheOptionsAPI',
+      component: TheCompositionAPI_ReplacingTheOptionsAPI
     },
     {
       path: '/other',

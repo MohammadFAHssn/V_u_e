@@ -31,6 +31,11 @@ export default {}
       <li>
         <RouterLink to="/Vue_Authentication">Vue & Authentication</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/TheCompositionAPI_ReplacingTheOptionsAPI"
+          >The Composition API - Replacing the Options API</RouterLink
+        >
+      </li>
       <li><RouterLink to="/other">Other</RouterLink></li>
     </ul>
   </nav>
