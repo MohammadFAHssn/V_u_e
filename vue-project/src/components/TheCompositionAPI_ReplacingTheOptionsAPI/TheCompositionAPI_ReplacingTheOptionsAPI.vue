@@ -206,5 +206,18 @@ setTimeout(function()&nbsp;{
       />
     </p>
   </section>
+
+  <!-- Using Vuex with the Composition API -->
+  <section class="tip">
+    <h3>Using Vuex with the Composition API</h3>
+
+    <p>
+      <img src="/src/assets/images/Using-Vuex-with-the-Composition-API.png" width="300px" />
+    </p>
+
+    <p>
+      <img src="/src/assets/images/Using-Vuex-with-the-Composition-API-2.png" width="200px" />
+    </p>
+  </section>
   <span></span>
 </template>
