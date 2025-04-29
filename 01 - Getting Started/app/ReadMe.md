@@ -21,6 +21,8 @@ Udemy - Vue - The Complete Guide (incl. Router & Composition API) 2023-5\15 - Vu
 18 - Optimizing & Deploying Vue Apps
 19 - The Composition API - Replacing the Options API\006 Reactivity A Deep Dive
 
+17 - Vue & Authentication
+
 ## building first app
 
 go to vuejs.org -> install link
